@@ -1,8 +1,56 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="~/css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="top-section blue-bar blue-background">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="logout-division">
+            <button type="button" class="logout">Logout</button>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="selection-section">
+            <div class="home-division">
+                <button type="button" class="home blue-background">Home</button>
+            </div>
+            <div class="talent-division">
+                <button type="button" class="talent blue-background">Talent Search</button>
+            </div>
+        </div>
+        <div class="image-section blue-background">
+            <div class="header-division">
+                <button type="button" class="edit">Edit</button>
+            </div>
+            <div class="image-division"></div>
+            <div class="caption-division">
+                <p></p>
+            </div>
+        </div>
+        <div class="plus-button">
+            <img src="~/images/add.png" alt="user logo">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
